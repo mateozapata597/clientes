@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>S&H - Mantenimiento de Fachadas</title>
+</head>
+<body>
+    <div id="modal-bienvenida" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 1000;">
+        <div style="background: white; padding: 30px; border-radius: 15px; text-align: center; max-width: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+            <h3>¡Hola!</h3>
+            <p>¡Te damos la bienvenida a S&H, expertos en mantenimiento de fachadas!</p>
+            <button onclick="cerrarModal()" style="padding: 10px 20px; background: #2e7d32; color: white; border: none; border-radius: 5px; cursor: pointer;">Aceptar</button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <img src="logo.png" class="nav-logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="somos.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="cotizacion.html">Cotización</a></li>
+        </ul>
+        <a href="https://wa.me/573011667020" class="btn-whatsapp" target="_blank">Escribir por WhatsApp</a>
+    </nav>
+
+    <main>
+        <img src="logo.png" class="logo-principal">
+        <h1>Expertos en mantenimiento de fachadas</h1>
+        <p>Somos profesionales en servicio de Acabados, mantenimiento y restauración de fachadas, puntos fijos, zonas comunes y parqueaderos en la ciudad de Medellín Antioquía.</p>
+        
+        <a href="cotizacion.html" class="bloque-cotizar">
+            <span>¡Cotiza tu proyecto ahora!</span>
+            <img src="cotiza.png" class="icono-boton-grande">
+        </a>
+        
+        <div class="fila-seccion">
+            <div class="item"><img src="lavado.png"><p>Lavado</p></div>
+            <div class="item"><img src="pintura.png"><p>Pintura</p></div>
+            <div class="item"><img src="imper.png"><p>Impermeabilización</p></div>
+        </div>
+        
+        <div class="contenedor-garantias">
+            <div class="item-icono">
+                <img src="arl.png" class="icono">
+                <p><strong>Personal con ARL</strong></p>
+            </div>
+            <div class="item-icono">
+                <img src="factura.png" class="icono">
+                <p><strong>Factura digital</strong></p>
+            </div>
+            <div class="item-icono">
+                <img src="respuesta.png" class="icono">
+                <p><strong>Respuesta instantánea</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="funcion.js"></script>
+</body>
+</html>

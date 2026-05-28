@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cotización - S&H</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="logo.png" class="nav-logo">
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="somos.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="cotizacion.html">Cotización</a></li>
+        </ul>
+        <a href="https://wa.me/573011667020" class="btn-whatsapp" target="_blank">Escribir por WhatsApp</a>
+    </nav>
+
+    <main>
+        <h1>COTIZACIÓN</h1>
+        <p>Estamos listos para elevar tu fachada</p>
+
+        <div class="cotizacion-grid">
+            <!-- Formulario conectado a Formspree -->
+            <form action="https://formspree.io/f/mlgvawyn" method="POST" class="columna-datos">
+                <p><strong>Datos:</strong></p>
+                
+                <label>Nombre persona o empresa:</label>
+                <input type="text" name="nombre" required>
+
+                <label>Correo electrónico:</label>
+                <input type="email" name="email" required>
+
+                <label>Número de contacto:</label>
+                <input type="tel" name="telefono">
+
+                <label>¿En qué servicio estas interesado(a)?:</label>
+                <input type="text" name="servicio">
+
+                <p><strong>Mensaje:</strong></p>
+                <label>1. Dirección o zona del inmueble (Barrio):</label>
+                <input type="text" name="direccion">
+
+                <label>2. Que necesitas:</label>
+                <textarea name="necesidad" rows="3" required></textarea>
+
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+            </form>
+
+            <div class="columna-img">
+                <img src="cotizacion.jpg" class="img-derecha">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
